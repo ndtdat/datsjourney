@@ -166,7 +166,7 @@ const Header = ({ navBarTitle, fullWidth }) => {
           <Link passHref href='/' scroll={false}>
             <a aria-label={BLOG.title}>
               <motion.div className='h-6 hover:text-blue-500 dark:hover:text-blue-500 fill-current'>
-                <Image src="./favicon.png" alt="Dat's Journey" width="28"/>
+                <Image src="/favicon.png" alt="Dat's Journey" width="28" height="28"/>
               </motion.div>
             </a>
           </Link>
