@@ -4,8 +4,8 @@ import { lang } from '@/lib/lang'
 import { useRouter } from 'next/router'
 import {
   UserIcon,
-  UsersIcon,
-  BookOpenIcon,
+  // UsersIcon,
+  // BookOpenIcon,
   MailIcon
 } from '@heroicons/react/outline'
 import Social from '../Common/Social.js'
@@ -37,20 +37,6 @@ const Footer = ({ fullWidth }) => {
     },
     {
       id: 1,
-      name: t.NAV.FRINEDS,
-      to: '/friends',
-      icon: <UsersIcon className='inline-block mb-1 h-5 w-5' />,
-      show: BLOG.pagesShow.friends
-    },
-    {
-      id: 2,
-      name: t.NAV.BOOKS,
-      to: '/books',
-      icon: <BookOpenIcon className='inline-block mb-1 h-5 w-5' />,
-      show: BLOG.pagesShow.books
-    },
-    {
-      id: 3,
       name: t.NAV.CONTACT,
       to: '/contact',
       icon: <MailIcon className='inline-block mb-1 h-5 w-5' />,

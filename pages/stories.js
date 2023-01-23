@@ -1,6 +1,6 @@
 import Container from '@/components/Container'
 import BlogPost from '@/components/BlogPost'
-import NewsletterHero from '@/components/Hero/Newsletter'
+import StoriesHero from '@/components/Hero/Stories'
 import { getAllPosts, getPostBlocks } from '@/lib/notion'
 import BLOG from '@/blog.config'
 
@@ -8,7 +8,7 @@ export async function getStaticProps() {
   const posts = await getAllPosts({ onlyNewsletter: true })
 
   const heros = await getAllPosts({ onlyHidden: true })
-  const hero = heros.find((t) => t.slug === 'newsletter')
+  const hero = heros.find((t) => t.slug === 'stories')
 
   let blockMap
   try {
@@ -27,10 +27,10 @@ export async function getStaticProps() {
   }
 }
 
-const newsletter = ({ posts, blockMap }) => {
+const stories = ({ posts, blockMap }) => {
   return (
     <Container title={BLOG.newsletter} description={BLOG.description}>
-      <NewsletterHero blockMap={blockMap} />
+      <StoriesHero blockMap={blockMap} />
       {posts.map((post) => (
         <BlogPost key={post.id} post={post} />
       ))}
@@ -38,4 +38,4 @@ const newsletter = ({ posts, blockMap }) => {
   )
 }
 
-export default newsletter
+export default stories

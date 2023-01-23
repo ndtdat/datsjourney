@@ -1,10 +1,12 @@
 const BLOG = {
-  title: 'Notionic',
-  author: '左蓝',
-  email: 'i@zuolan.me',
-  link: 'https://zuolan.me',
-  newsletter: 'Notionic Weekly',
-  description: 'A static blog build on top of Notion and Next.js',
+  title: 'Dat\'s Journey',
+  author: 'Nguyễn Doãn Tiến Đạt',
+  email: 'tiendat3550@gmail.com',
+  link: '',
+  books: 'Những cuốn sách',
+  stories: 'Những câu chuyện',
+  experiences: 'Những trải nghiệm',
+  description: 'Hành trình của Đạt',
   lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   appearance: 'auto', // ['light', 'dark', 'auto'],
   font: 'sans-serif', // ['sans-serif', 'serif']
@@ -16,11 +18,10 @@ const BLOG = {
   sortByDate: true,
   pagesShow: {
     newsletter: true,
-    notes: true,
-    projects: true,
-    contact: true,
+    experiences: true,
     books: true,
-    friends: true
+    stories: true,
+    contact: true
   },
   showWeChatPay: true,
   previewImagesEnabled: true,
@@ -28,12 +29,12 @@ const BLOG = {
   ogImageGenerateHost: 'og-zl.vercel.app', // The link to generate OG image, don't end with a slash
   defaultCover: '/cover.jpg',
   socialLink: {
-    twitter: 'https://twitter.com/izuolan',
-    github: 'https://github.com/izuolan',
-    telegram: 'https://t.me/zuolan'
+    facebook: 'https://www.facebook.com/profile.php?id=100089519386843',
+    github: 'https://github.com/datndt',
+    telegram: ''
   },
   seo: {
-    keywords: ['Notionic', 'Zuolan', 'Blog'],
+    keywords: ['Dat\'s Journey', 'Blog'],
     googleSiteVerification: '' // Remove the value or replace it with your own google site verification code
   },
   notionPageId: process.env.NOTION_PAGE_ID, // DO NOT CHANGE THIS! Edit .env file!
