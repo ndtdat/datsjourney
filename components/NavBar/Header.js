@@ -13,6 +13,7 @@ import {
 import Social from '../Common/Social.js'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import ThemeSwitcher from './ThemeSwitcher.js'
 
 const NavBar = () => {
   const router = useRouter()
@@ -80,7 +81,7 @@ const NavBar = () => {
         )}
       </ul>
 
-      {/* <ThemeSwitcher /> */}
+      <ThemeSwitcher />
       {/* <LangSwitcher /> */}
 
       {/* Mobile Phone Menu */}
@@ -166,7 +167,7 @@ const Header = ({ navBarTitle, fullWidth }) => {
           <Link passHref href='/' scroll={false}>
             <a aria-label={BLOG.title}>
               <motion.div className='h-6 hover:text-blue-500 dark:hover:text-blue-500 fill-current'>
-                <Image src="/favicon.png" alt="Dat's Journey" width="28" height="28"/>
+                <Image src="/favicon.svg" alt="Dat's Journey" width="28" height="28"/>
               </motion.div>
             </a>
           </Link>
