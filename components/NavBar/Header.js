@@ -12,6 +12,7 @@ import {
 } from '@heroicons/react/outline'
 import Social from '../Common/Social.js'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const NavBar = () => {
   const router = useRouter()
@@ -165,7 +166,7 @@ const Header = ({ navBarTitle, fullWidth }) => {
           <Link passHref href='/' scroll={false}>
             <a aria-label={BLOG.title}>
               <motion.div className='h-6 hover:text-blue-500 dark:hover:text-blue-500 fill-current'>
-                <img src="./favicon.png" alt="Dat's Journey" width="28"></img>
+                <Image src="./favicon.png" alt="Dat's Journey" width="28"/>
               </motion.div>
             </a>
           </Link>
