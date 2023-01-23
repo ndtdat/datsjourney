@@ -19,10 +19,10 @@ export const Contact = () => {
         <p className='max-w-screen-md font-light md:text-lg text-center mx-auto'>
           {t.CONTACT.TG_DESCRIPTION}
           <a
-            href={BLOG.socialLink.telegram}
+            href={BLOG.socialLink.facebook}
             className='hover:text-indigo-500 active:text-indigo-600 underline transition duration-100'
           >
-            @{BLOG.socialLink.telegram.slice(13)}
+            tại đây
           </a>
         </p>
       </div>
