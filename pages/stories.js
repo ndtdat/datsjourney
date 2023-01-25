@@ -5,7 +5,7 @@ import { getAllPosts, getPostBlocks } from '@/lib/notion'
 import BLOG from '@/blog.config'
 
 export async function getStaticProps() {
-  const posts = await getAllPosts({ onlyNewsletter: true })
+  const posts = await getAllPosts({ onlyStories: true })
 
   const heros = await getAllPosts({ onlyHidden: true })
   const hero = heros.find((t) => t.slug === 'stories')
@@ -29,7 +29,7 @@ export async function getStaticProps() {
 
 const stories = ({ posts, blockMap }) => {
   return (
-    <Container title={BLOG.newsletter} description={BLOG.description}>
+    <Container title={BLOG.stories} description={BLOG.description}>
       <StoriesHero blockMap={blockMap} />
       {posts.map((post) => (
         <BlogPost key={post.id} post={post} />

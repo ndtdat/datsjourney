@@ -6,7 +6,12 @@ import { getAllPosts, getPostBlocks } from '@/lib/notion'
 import BLOG from '@/blog.config'
 
 export async function getStaticProps() {
-  const posts = await getAllPosts({ onlyPost: true })
+  const posts = await getAllPosts({
+    onlyPost: true,
+    onlyBooks: true,
+    onlyExperiences: true,
+    onlyStories: true
+  })
 
   const heros = await getAllPosts({ onlyHidden: true })
   const hero = heros.find((t) => t.slug === 'index')

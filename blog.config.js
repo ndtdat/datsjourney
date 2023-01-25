@@ -3,9 +3,10 @@ const BLOG = {
   author: 'Nguyễn Doãn Tiến Đạt',
   email: 'tiendat3550@gmail.com',
   link: '',
-  books: 'Những cuốn sách',
+  books: 'Tủ sách',
   stories: 'Những câu chuyện',
   experiences: 'Những trải nghiệm',
+  contact: 'Liên hệ',
   description: 'Hành trình của Đạt',
   lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   appearance: 'auto', // ['light', 'dark', 'auto'],
