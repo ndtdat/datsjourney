@@ -1,4 +1,4 @@
-import { BookOpenIcon } from '@heroicons/react/outline'
+import { GlobeAltIcon } from '@heroicons/react/outline'
 import dynamic from 'next/dynamic'
 import { NotionRenderer } from 'react-notion-x'
 
@@ -18,7 +18,7 @@ const ExperiencesHero = ({ blockMap }) => {
           />
         </div>
         <div className='w-1/5'>
-          <BookOpenIcon className='object-cover object-center text-gray-500 dark:text-gray-300' />
+          <GlobeAltIcon className='object-cover object-center text-gray-500 dark:text-gray-300' />
         </div>
       </div>
     </>

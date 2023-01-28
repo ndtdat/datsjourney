@@ -51,7 +51,7 @@ const NavBar = () => {
       show: BLOG.pagesShow.stories
     },
     {
-      id: 2,
+      id: 3,
       name: t.NAV.BOOKS,
       to: '/books',
       icon: <BookOpenIcon className='inline-block mb-1 h-5 w-5' />,
