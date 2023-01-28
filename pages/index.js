@@ -8,9 +8,6 @@ import BLOG from '@/blog.config'
 export async function getStaticProps() {
   const posts = await getAllPosts({
     onlyPost: true,
-    onlyBooks: true,
-    onlyExperiences: true,
-    onlyStories: true
   })
 
   const heros = await getAllPosts({ onlyHidden: true })
